@@ -16,21 +16,21 @@ public class Main {
 
         UserServiceImpl userDao = new UserServiceImpl();
 
-//        userDao.createUsersTable();
+        userDao.createUsersTable();
 
         userDao.dropUsersTable();
 
-//        userDao.saveUser("Ivan","Ivanov", (byte) 38);
-//        userDao.saveUser("Petr","Petrov", (byte) 42);
-//        userDao.saveUser("Aleksandar","Aleksandrovech", (byte) 21);
-//        userDao.saveUser("Maksim","Maksimovich", (byte) 31);
-////
-//        userDao.removeUserById(4);
+        userDao.saveUser("Ivan","Ivanov", (byte) 38);
+        userDao.saveUser("Petr","Petrov", (byte) 42);
+        userDao.saveUser("Aleksandar","Aleksandrovech", (byte) 21);
+        userDao.saveUser("Maksim","Maksimovich", (byte) 31);
 //
-//        List<User> userList1 = userDao.getAllUsers();
-//        userList1.forEach(System.out::println);
-//
-//        userDao.cleanUsersTable();
+        userDao.removeUserById(4);
+
+        List<User> userList1 = userDao.getAllUsers();
+        userList1.forEach(System.out::println);
+
+        userDao.cleanUsersTable();
             // реализуйте алгоритм здесь
     }
 }
